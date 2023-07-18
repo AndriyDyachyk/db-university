@@ -22,3 +22,10 @@ SELECT COUNT(*)
 FROM `courses`
 WHERE `period`LIKE 'I semestre'
 AND `year` LIKE 1;
+
+es 5 - Seleziona tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14) del 20/06/2020
+procedura:
+SELECT COUNT(*) 
+FROM `exams` 
+WHERE `date` = '2020-06-20'
+AND HOUR(`hour`)>=14;
