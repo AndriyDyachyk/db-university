@@ -16,3 +16,9 @@ SELECT *
 FROM `students`
 WHERE TIMESTAMPDIFF(YEAR,`date_of_birth`,CURDATE())>30;
 
+es 4 - Seleziona tutti i corsi del primo semestre del primo anno di un qualiasi corso di laurea
+prodecura:
+SELECT COUNT(*)
+FROM `courses`
+WHERE `period`LIKE 'I semestre'
+AND `year` LIKE 1;
