@@ -9,3 +9,10 @@ procedura:
 SELECT COUNT(*) 
 FROM `courses`
 WHERE `cfu` > 10;
+
+es 3 - Seleziona tutti gli studenti che hanno più di 30 anni
+procedura:
+SELECT *
+FROM `students`
+WHERE TIMESTAMPDIFF(YEAR,`date_of_birth`,CURDATE())>30;
+
