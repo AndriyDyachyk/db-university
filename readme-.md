@@ -31,6 +31,12 @@ WHERE `date` = '2020-06-20'
 AND HOUR(`hour`)>=14;
 
 es 6 - Selezionare tutti i corsi di laurea magistrale
+procedura:
 SELECT COUNT(*) 
 FROM `degrees`
 WHERE `level` LIKE 'Magistrale';
+
+es 7 - Da quanti dipartimenti è composta l'università?
+procedura:
+SELECT COUNT(*) 
+FROM `departments`;
