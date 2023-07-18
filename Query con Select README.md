@@ -40,3 +40,9 @@ es 7 - Da quanti dipartimenti è composta l'università?
 procedura:
 SELECT COUNT(*) 
 FROM `departments`;
+
+es 8 - Quanti sono gli insegnanti che non hanno un numero di telefono?
+procedura:
+SELECT COUNT(*)
+FROM `teachers`
+WHERE `phone` IS NULL;
